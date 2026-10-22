@@ -1,0 +1,26 @@
+package J7;
+import java.util.Scanner;
+
+public class SiakadFor05 {
+    public static void main(String[] args) {
+    Scanner ael = new Scanner(System.in);
+
+        double nilai, tertinggi = 0, terendah =100;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Masukkan Nilai Mahasiswa ke-" + i + ": ");
+            nilai = ael.nextDouble();
+
+            if (nilai > tertinggi) {
+                tertinggi = nilai;
+            }
+            if (nilai < terendah) {
+                terendah = nilai;
+            }
+
+        }
+        
+            System.out.println("Nilai tertinggi:" + tertinggi);
+            System.out.println("Nilai terndah: "+ terendah);
+    }
+}
